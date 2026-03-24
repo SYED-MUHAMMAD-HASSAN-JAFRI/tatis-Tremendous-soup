@@ -46,7 +46,7 @@ const PRODUCTS = [
     price: 14.00,
     category: "Soap Bar",
     image: "https://images.unsplash.com/photo-1590439471364-192aa70c0b53?auto=format&fit=crop&q=80&w=800",
-    color: "bg-pink-100"
+    color: "bg-soap-pink/20"
   }
 ];
 
@@ -122,11 +122,13 @@ export default function App() {
       {/* Navigation */}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-soap-cream/90 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-soap-pink rounded-full flex items-center justify-center group-hover:rotate-12 transition-transform">
-              <Droplets className="text-soap-ink w-6 h-6" />
-            </div>
-            <span className="text-xl font-serif font-bold tracking-tight">Tatis Tremendous</span>
+          <a href="#" className="flex items-center group">
+            <img 
+              src="/logo.png" 
+              alt="Tati's Tremendous Soaps Logo" 
+              className="h-16 w-auto object-contain group-hover:scale-110 transition-transform"
+              referrerPolicy="no-referrer"
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -209,12 +211,12 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="inline-block px-4 py-1 bg-soap-sage/90 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">
+            <span className="inline-block px-4 py-1 bg-soap-pink/90 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">
               Handmade with Love
             </span>
             <h1 className="text-6xl md:text-9xl font-serif font-bold leading-[0.9] mb-8 tracking-tighter text-soap-ink drop-shadow-md">
               Tremendous <br /> 
-              <span className="italic text-[#FF80AB] drop-shadow-[0_4px_20px_rgba(255,128,171,0.5)]">Suds & Scrubs</span>
+              <span className="italic text-soap-pink drop-shadow-[0_4px_20px_rgba(255,128,171,0.5)]">Suds & Scrubs</span>
             </h1>
             <p className="max-w-xl mx-auto text-lg md:text-xl text-soap-ink/80 mb-10 font-medium">
               Elevate your daily ritual with our artisan-crafted soaps and body scrubs. 
@@ -287,7 +289,7 @@ export default function App() {
       </section>
 
       {/* B2B / Wholesale Section */}
-      <section id="wholesale" className="py-24 bg-soap-sage/30">
+      <section id="wholesale" className="py-24 bg-soap-pink/10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -416,11 +418,13 @@ export default function App() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 bg-soap-pink rounded-full flex items-center justify-center">
-                  <Droplets className="text-soap-ink w-4 h-4" />
-                </div>
-                <span className="text-xl font-serif font-bold tracking-tight">Tatis Tremendous</span>
+              <div className="flex items-center mb-6">
+                <img 
+                  src="/logo.png" 
+                  alt="Tati's Tremendous Soaps Logo" 
+                  className="h-20 w-auto object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <p className="text-soap-ink/60 max-w-sm mb-8">
                 Artisan soaps and body scrubs designed to make your skin feel tremendous. 
