@@ -21,7 +21,7 @@ const PRODUCTS = [
     name: "Lavender Dream",
     price: 12.00,
     category: "Soap Bar",
-    image: "https://picsum.photos/seed/lavender-soap/800/1000",
+    image: "https://images.unsplash.com/photo-1600857062241-98e5dba7f214?auto=format&fit=crop&q=80&w=800",
     color: "bg-purple-100"
   },
   {
@@ -29,7 +29,7 @@ const PRODUCTS = [
     name: "Citrus Burst Scrub",
     price: 18.00,
     category: "Body Scrub",
-    image: "https://picsum.photos/seed/citrus-scrub/800/1000",
+    image: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&q=80&w=800",
     color: "bg-orange-100"
   },
   {
@@ -37,7 +37,7 @@ const PRODUCTS = [
     name: "Ocean Breeze",
     price: 12.00,
     category: "Soap Bar",
-    image: "https://picsum.photos/seed/ocean-soap/800/1000",
+    image: "https://images.unsplash.com/photo-1546552356-3fae876a61ca?auto=format&fit=crop&q=80&w=800",
     color: "bg-blue-100"
   },
   {
@@ -45,7 +45,7 @@ const PRODUCTS = [
     name: "Rose Petal Glow",
     price: 14.00,
     category: "Soap Bar",
-    image: "https://picsum.photos/seed/rose-soap/800/1000",
+    image: "https://images.unsplash.com/photo-1590439471364-192aa70c0b53?auto=format&fit=crop&q=80&w=800",
     color: "bg-pink-100"
   }
 ];
@@ -179,15 +179,15 @@ export default function App() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="https://picsum.photos/seed/soap-artisan/1920/1080" 
-            alt="Handmade Soap Background"
+            src="https://picsum.photos/seed/soap-hero/1920/1080" 
+            alt="Artisan Soap Banner"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
           />
-          {/* Layered Overlays for Depth */}
-          <div className="absolute inset-0 bg-soap-cream/40 backdrop-blur-[4px]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-soap-cream/20 via-transparent to-soap-cream/60" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(253,252,248,0.8)_70%)]" />
+          {/* Layered Overlays for Depth and Legibility */}
+          <div className="absolute inset-0 bg-soap-cream/30 backdrop-blur-[2px]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-soap-cream/10 via-transparent to-soap-cream/50" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(253,252,248,0.6)_80%)]" />
         </motion.div>
 
         {/* Animated Bubbles Background */}
@@ -212,9 +212,9 @@ export default function App() {
             <span className="inline-block px-4 py-1 bg-soap-sage/90 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">
               Handmade with Love
             </span>
-            <h1 className="text-6xl md:text-9xl font-serif font-bold leading-[0.9] mb-8 tracking-tighter drop-shadow-sm">
+            <h1 className="text-6xl md:text-9xl font-serif font-bold leading-[0.9] mb-8 tracking-tighter text-soap-ink drop-shadow-md">
               Tremendous <br /> 
-              <span className="italic text-soap-pink drop-shadow-[0_2px_10px_rgba(255,183,197,0.3)]">Suds & Scrubs</span>
+              <span className="italic text-[#FF80AB] drop-shadow-[0_4px_20px_rgba(255,128,171,0.5)]">Suds & Scrubs</span>
             </h1>
             <p className="max-w-xl mx-auto text-lg md:text-xl text-soap-ink/80 mb-10 font-medium">
               Elevate your daily ritual with our artisan-crafted soaps and body scrubs. 
@@ -323,7 +323,7 @@ export default function App() {
             <div className="relative">
               <div className="aspect-square rounded-[40px] overflow-hidden shadow-2xl rotate-3">
                 <img 
-                  src="https://picsum.photos/seed/soap-workshop/1000/1000" 
+                  src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&q=80&w=1000" 
                   alt="Soap Workshop"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -386,7 +386,7 @@ export default function App() {
       <section className="py-24 bg-soap-ink text-soap-cream relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
           <img 
-            src="https://picsum.photos/seed/soap-texture/1920/1080" 
+            src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&q=80&w=2000" 
             alt="Soap Texture"
             className="w-full h-full object-cover grayscale"
             referrerPolicy="no-referrer"
